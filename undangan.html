@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasyakur Khitan Afkar</title>
+    <link rel="stylesheet" href="undangan.css" />
+  </head>
+  <body>
+    <section class="cover">
+      <div class="overlay">
+        <p class="small">Undangan Tasyakur Khitan</p>
+
+        <img
+          src="../undangan/image/foto.jpeg"
+          alt="Afkar"
+          class="profile-photo"
+        />
+
+        <h1>Afkar Prasaja Abqari</h1>
+
+        <p class="date">28 Oktober 2026</p>
+
+        <a href="#isi" class="open-btn"> Buka Undangan </a>
+      </div>
+    </section>
+
+    <section id="isi" class="section">
+      <h2>Assalamu'alaikum Wr. Wb.</h2>
+
+      <button id="musicBtn" class="maps-btn">🎵 Pause Musik</button>
+
+      <div class="card">
+        <p>
+          Kalayan hormat, simkuring ngahaturkeun uleman ka Bapa/Ibu/Saderek
+          sadayana kanggo ngahadiran acara tasyakur khitan putra kami.
+        </p>
+
+        <h3 class="nama">Afkar Prasaja Abqari</h3>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Hitung Mundur</h2>
+
+      <div class="card countdown">
+        <div>
+          <span>28</span>
+          <small>Oktober</small>
+        </div>
+
+        <div>
+          <span>2026</span>
+          <small>Tahun</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Detail Acara</h2>
+
+      <div class="card">
+        <p>📅 Rabu, 28 Oktober 2026</p>
+        <p>🕙 Pukul 10.00 WIB</p>
+        <p>📍 Jl. Sukaraja II No.7</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Lokasi Acara</h2>
+
+      <div class="card">
+        <p>Tekan tombol di handap kanggo ningali lokasi acara.</p>
+
+        <a
+          href="https://www.google.com/maps/place/Ds.+Body+Repair/@-6.8920482,107.575465,17z/data=!4m6!3m5!1s0x2e68e67f6b77a3b5:0x13365c6f4bf57112!8m2!3d-6.892046!4d107.5754617!16s%2Fg%2F11b60d5ktr?hl=en&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D"
+          target="_blank"
+          class="maps-btn"
+        >
+          📍 Lihat Lokasi
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Galeri</h2>
+
+      <div class="gallery">
+        <img src="../undangan/image/foto.jpeg" alt="" />
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Pangajén sareng Do'a</h2>
+
+      <div class="card">
+        <p>
+          Mugi putra kami janten murangkalih anu sholeh, taat ka kolot, mangpaat
+          pikeun agama, bangsa sareng nagara.
+        </p>
+
+        <br />
+
+        <p>
+          Simkuring nyuhunkeun doa ti sadayana, mugi acara lumangsung kalayan
+          lancar, pinuh ku rahmat sareng berkah ti Allah SWT.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card">
+        <h2>Hatur Nuhun</h2>
+
+        <p>
+          Hatur nuhun kana waktos sareng kahadiran Bapa/Ibu/Saderek sadayana.
+        </p>
+
+        <p>Wassalamu'alaikum Wr. Wb.</p>
+      </div>
+    </section>
+
+    <footer>© 2026 Tasyakur Khitan Afkar Prasaja Abqari</footer>
+
+    <audio id="bgMusic" loop>
+      <source src="../undangan/music/islamic.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script>
+const openBtn = document.querySelector(".open-btn");
+const music = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+openBtn.addEventListener("click", () => {
+  music.play();
+});
+
+musicBtn.addEventListener("click", () => {
+  if (music.paused) {
+    music.play();
+    musicBtn.innerHTML = "🎵 mulai musik ";
+  } else {
+    music.pause();
+    musicBtn.innerHTML = "▶️ matikan musik";
+  }
+});
+</script>
+  </body>
+</html>
